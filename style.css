@@ -128,22 +128,25 @@ body {
   }
 }
 
-.sign-btn {
-  padding: 5px 10px;
+.nav-sign-btn {
+  
+  padding: 10px ;
+width: 100px;
   margin-left: 10px;
   border: none;
   border-radius: 5px;
-  padding: 10px;
+  /* padding: 10px; */
   font-size: 22px;
   background-color: #1118dc;
   color: #fff;
   cursor: pointer;
+  
 }
 
 .sign-btn:hover{
   background-color: #555;
 }
-.sign-btn a{
+.nav-sign-btn a{
   text-decoration: none;
   color: white;
 }

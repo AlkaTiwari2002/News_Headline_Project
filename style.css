@@ -1,17 +1,10 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
+/* Flex container for alignment */
 .flex {
   display: flex;
   align-items: center;
 }
+
+/* Navbar container */
 nav {
   background-color: #ccd0d3;
   box-shadow: 0 2px 4px #bbd0e2;
@@ -22,15 +15,20 @@ nav {
   z-index: 1000;
 }
 
+/* Main navigation container */
 .main-nav {
   justify-content: space-between;
+  align-items: center;
 }
 
+/* Logo in the navbar */
 .company-logo img {
   width: 100px;
   height: auto;
   border-radius: 50%;
 }
+
+/* Navigation links container */
 .nav-links ul {
   list-style: none;
   margin: 0;
@@ -57,6 +55,8 @@ nav {
 .nav-item a:hover {
   text-decoration: underline;
 }
+
+/* Search bar container */
 .search-bar {
   justify-content: flex-end;
 }
@@ -83,70 +83,90 @@ nav {
 .search-button:hover {
   background-color: #555;
 }
-body {
-  padding-top: 60px; 
-}
-@media (max-width: 768px) {
-  .main-nav {
-      flex-direction: column;
-  }
 
-  .nav-links ul {
-      flex-direction: column;
-  }
-
-  .nav-item {
-      margin-left: 0;
-      margin-top: 10px;
-  }
-
-  .search-bar {
-      width: 100%;
-      margin-top: 10px;
-  }
-
-  .news-input {
-      width: 80%;
-  }
-
-  .search-button {
-      width: 100px;
-  }
-}
-
-@media (max-width: 480px) {
-  .company-logo img {
-      width: 80px;
-  }
-
-  .news-input {
-      width: 70%;
-  }
-
-  .search-button {
-      width: 80px;
-  }
-}
-
+/* Sign In button */
 .nav-sign-btn {
-  
-  padding: 10px ;
-width: 100px;
+  padding: 10px;
+  width: 100px;
   margin-left: 10px;
   border: none;
   border-radius: 5px;
-  /* padding: 10px; */
   font-size: 22px;
   background-color: #1118dc;
   color: #fff;
   cursor: pointer;
-  
 }
 
-.sign-btn:hover{
+.nav-sign-btn:hover {
   background-color: #555;
 }
-.nav-sign-btn a{
+
+.nav-sign-btn a {
   text-decoration: none;
   color: white;
+}
+
+/* Ensure the navbar is not covered by content */
+body {
+  padding-top: 60px; 
+}
+
+/* Mobile styles for small screens */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .news-input {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .search-button {
+    width: 100px;
+    font-size: 18px;
+  }
+
+  .nav-sign-btn {
+    width: 100%;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+}
+
+/* Further styles for very small screens */
+@media (max-width: 480px) {
+  .company-logo img {
+    width: 80px;
+  }
+
+  .news-input {
+    width: 70%;
+  }
+
+  .search-button {
+    width: 80px;
+  }
+
+  .nav-sign-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
 }

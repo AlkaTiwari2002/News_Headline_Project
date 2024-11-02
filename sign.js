@@ -1,3 +1,4 @@
+
 document.getElementById('signInForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -6,9 +7,14 @@ document.getElementById('signInForm').addEventListener('submit', function(event)
     var messageDiv = document.getElementById('message');
 
     if (email && password) {
-        messageDiv.textContent = 'Sign in successful!';
+        // Hide the form
+        document.getElementById('signInForm').style.display = 'none';
+
+        // Show success message
+        messageDiv.textContent = 'Sign in successful! You are logged in.';
         messageDiv.style.color = 'green';
     } else {
         messageDiv.textContent = 'Please enter both email and password.';
+        messageDiv.style.color = 'red';
     }
 });

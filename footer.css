@@ -51,21 +51,22 @@
                 margin-bottom: 10px;
             }
             
-            .footersocial-icons {
+            .footersocial-icons  {
                 display: flex;
-                padding: 0;
+        
             }
             
-            .social-icons li {
+            /* .social-icons li {
+                margin-right: 10px;
+            } */
+            
+            .footersocial-icons a {
+                color: #fff;
+                font-size: 30px;
                 margin-right: 10px;
             }
             
-            .social-icons a {
-                color: #fff;
-                font-size: 30px;
-            }
-            
-            .social-icons a:hover {
+            .footersocial-icons a:hover {
                 color: blue;
             }
             
